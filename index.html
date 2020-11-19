@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create Website Header</title>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="ReadHut Img/logo.png" class="logo-icon">
+        </div>    
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Office</a></li>
+                    <li><a href="#">Hotail</a></li>
+                    <li><a href="#">Conect Us</a></li>
+
+                </ul>
+            </nav>
+            <div class="user">
+                <p>ms3b youssef</p>
+                <img src="ReadHut Img/user.png" >
+            </div>
+  </div>
+  <div class="sidebar">
+      <img src="ReadHut Img/search.png" class="search-icon">
+      <div class="social-links">
+          <img src="ReadHut Img/fb.png" >
+          <img src="ReadHut Img/ig.png" >
+          <img src="ReadHut Img/pt.png" >
+
+      </div>
+      <img src="ReadHut Img/info.png" class="info-icon">
+  </div>
+    <div class="mas-container">
+        <div id="slider">
+            <div class="msg-col">
+                <h1>The Learning</h1>
+                <p>To work as a full stack web developer in an organization where I can utilize my skills, and encourages me to learn new skills </p>
+            </div>
+            <div class="msg-col">
+                <h1>The Interation</h1>
+                <p>To work as a full stack web developer in an organization where I can utilize my skills, and encourages me to learn new skills </p>
+            </div>
+            <div class="msg-col">
+                <h1>The Reasoning</h1>
+                <p>To work as a full stack web developer in an organization where I can utilize my skills, and encourages me to learn new skills </p>
+            </div>
+            <div class="msg-col">
+                <h1>The Knowladge</h1>
+                <p>To work as a full stack web developer in an organization where I can utilize my skills, and encourages me to learn new skills </p>
+            </div>            
+        </div>
+    </div>
+        <div class="contoller">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+            <div id="line4"></div>
+            <div id="active"></div>
+
+        </div>
+
+</div>
+<script>
+    var slider = document.getElementById('slider');
+    var active = document.getElementById('active');
+    var line1 = document.getElementById('line1');
+    var line2 = document.getElementById('line2');
+    var line3 = document.getElementById('line3');
+    var line4 = document.getElementById('line4');
+
+    line1.onclick = function()
+    {
+        slider.style.transform = 'translateX(0)';
+        active.style.top ='0';
+    }
+    line2.onclick = function()
+    {
+        slider.style.transform = 'translateX(-25%)';
+        active.style.top ='60px';
+    }
+    line3.onclick = function()
+    {
+        slider.style.transform = 'translateX(-50%)';
+        active.style.top ='120px';
+    }
+    line4.onclick = function()
+    {
+        slider.style.transform = 'translateX(-75%)';
+        active.style.top ='180px';
+    }
+
+</script>
+</body>
+</html>
